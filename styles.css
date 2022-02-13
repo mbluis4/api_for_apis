@@ -1,0 +1,57 @@
+body {
+    font-family: Roboto , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #EDE7E3;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    text-align: center;
+    background-color: #16697A;
+    padding: 1rem;
+    margin: 0;
+}
+.my-api-list {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+}
+
+.my-api {
+    display: grid;
+    grid-template-columns: repeat(autofill, calc(100%/3));
+    grid-template-rows: 3rem 1rem 4rem 3rem;
+    margin: 0.3rem;
+}
+
+.my-api * {
+    display: flex;
+    align-items: center;
+    border: solid black 1px;
+}
+
+.my-api-title {
+ grid-row-start: 1;
+ background-color: lightgreen;
+}
+
+.my-api-description {
+    grid-row-start: 3;
+    background-color: lightblue;
+}
+
+.my-api-auth {
+ grid-row-start: 2;
+ background-color: lightsalmon;
+}
+
+.my-api-https {
+    grid-row-start: 4;
+    background-color: lightyellow;
+}
+
+.my-api a {
+    border: none;
+}
